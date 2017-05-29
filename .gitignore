@@ -1,0 +1,4 @@
+bigartm.*.log.*
+*.pyc
+*.batch
+*.dict
