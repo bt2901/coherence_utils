@@ -7,8 +7,6 @@ import model_utils
 from palmettopy.palmetto import Palmetto
 palmetto = Palmetto()
 
-#http://palmetto.aksw.org/palmetto-webapp/service/cv?words=nasa%20space%20gov
-
 def measure_coherence(displayed_words):
     displayed_words = displayed_words[-10:]
     result = palmetto.get_coherence(displayed_words, coherence_type="cv")
@@ -73,12 +71,12 @@ def calc_LR_vectorised(phi, theta):
 
     weighted_pk = calc_weighted_pk(phi, theta)
             
-    L_numer = phi.transpose() * (1 - p_k[:, numpy.newaxis])
-    L_denom = (numpy.sum(weighted_pk, axis=0) - weighted_pk)
-    #L_denom[L_denom < eps] = eps
+    numerator = phi.transpose() * (1 - p_k[:, numpy.newaxis])
+    denominator = (numpy.sum(weighted_pk, axis=0) - weighted_pk)
+    #denominator[denominator < eps] = eps
     
-    target_values = L_numer / L_denom
-    target_values[L_denom == 0] = float("-inf") # infinite likelihood ratios aren't interesting
+    target_values = numerator / denominator
+    target_values[denominator == 0] = float("-inf") # infinite likelihood ratios aren't interesting
     return target_values
     
 def calc_blei_scores(plsa_phi):
