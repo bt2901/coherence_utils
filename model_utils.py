@@ -39,8 +39,19 @@ def example_model():
 
     return model, batch_vectorizer, dictionary
 
-def read_phi_blei():
-    pass
+def read_phi_blei(V, T):
+    # my_shape = (T, 15275)
+
+    lda_phi = numpy.zeros((V, T))
+    topic = 0
+    with open("word-prob-in-topic", "r") as f:
+        for line in f:
+            arr = line.strip().split(" ")
+            for i, prob in enumerate(arr):
+                lda_phi[i, topic] = numpy.exp(float(prob))
+            topic += 1
+    return lda_phi
+
 
 def blei2artm():
     pass
@@ -48,3 +59,11 @@ def blei2artm():
 def artm2blei():
     pass
 
+def get_top_indices(target_values, N):
+    order = numpy.argsort(target_values)[::-1]
+
+    sorted_vals = target_values[order]
+    ids = numpy.array(range(len(target_values)))
+    ids = ids[order]
+    return ids[:N]
+    

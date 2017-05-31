@@ -126,13 +126,9 @@ for topic_index, topic_name in enumerate(model.topic_names):
             target_values = alpha * ptw_vector[topic_index, :] + (1-alpha) * plsa_phi[:, topic_index]
         else: 
             raise NameError
-            
-        order = numpy.argsort(target_values)[::-1]
 
-        sorted_words = target_values[order]
-        sorted_words_ids = words_ids[order]
-        displayed_word_ids = [sorted_words_ids[i] for i in range(10)]
-        
+
+        displayed_word_ids = model_utils.get_top_indices(target_values, 10)
         displayed_words = [num_2_token[id] for id in displayed_word_ids]
 
         print "{}: {}".format(description, displayed_words)
