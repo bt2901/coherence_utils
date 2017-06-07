@@ -1,6 +1,4 @@
 #encoding=utf8
-#model_utils.py
-
 import numpy as np
 import artm
 import glob, os
@@ -42,15 +40,24 @@ def example_model():
 def read_phi_blei(V, T):
     # my_shape = (T, 15275)
 
-    lda_phi = numpy.zeros((V, T))
+    lda_phi = np.zeros((V, T))
     topic = 0
     with open("word-prob-in-topic", "r") as f:
         for line in f:
             arr = line.strip().split(" ")
             for i, prob in enumerate(arr):
-                lda_phi[i, topic] = numpy.exp(float(prob))
+                lda_phi[i, topic] = np.exp(float(prob))
             topic += 1
     return lda_phi
+    
+def read_vocab_blei():
+    num2token = {}
+    token2num = {}
+    with open("vocab", "r") as f:
+        for i, line in enumerate(f):
+            num2token[i] = line.strip()
+            token2num[line.strip()] = i
+    return num2token, token2num
 
 
 def blei2artm():
@@ -60,10 +67,10 @@ def artm2blei():
     pass
 
 def get_top_indices(target_values, N):
-    order = numpy.argsort(target_values)[::-1]
+    order = np.argsort(target_values)[::-1]
 
     sorted_vals = target_values[order]
-    ids = numpy.array(range(len(target_values)))
+    ids = np.array(range(len(target_values)))
     ids = ids[order]
     return ids[:N]
     

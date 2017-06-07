@@ -1,32 +1,23 @@
 
-import numpy as np
+import numpy 
 import os, glob, codecs
-from coherence_lib import *
+from model_utils import read_phi_blei, read_vocab_blei, get_top_indices
 import itertools
 from tqdm import tqdm 
 import artm
 
 
+
 T = 50
-
 vocab_size = 15275
-lda_phi = read_phi(vocab_size, T)
-print np.sum(lda_phi)
+lda_phi = read_phi_blei(vocab_size, T)
     
-num2token, token2num = read_vocab()
-
-
-n_positions = 22331618
-    
-
-
-                
+num2token, token2num = read_vocab_blei()
                 
 def calc_expected_words(T, words_data, local_theta, phi):
     expected_words = numpy.zeros((T, ))
     for word_id, count in words_data.items():
         pwt = lda_phi[word_id, :]
-        # TODO: better ptdw
         ptdw = lda_phi[word_id, :] * local_theta[:]
         ptdw /= numpy.sum(ptdw)
         expected_words += count * ptdw
@@ -51,24 +42,19 @@ def get_stuff(line, token2num, displayed_word_ids):
 def get_displayed_words_for_every_topic(T, lda_phi, num2token):
     displayed_word_ids = [set()] * T
     for topic in range(T):
-        displayed_words, this_displayed_word_ids = top_words_in_topic(lda_phi[:, topic], num2token)
-        displayed_word_ids[topic] = set(this_displayed_word_ids)
+        top_word_ids = get_top_indices(lda_phi[:, topic], 10)
+        displayed_words = [num2token[id] for id in top_word_ids]
+        displayed_word_ids[topic] = set(top_word_ids)
     return displayed_word_ids
 
 
 def calc_outside_prob(T, lda_phi, token2num, displayed_word_ids):
-    
-    print "calc_outside_prob"
-    print len(token2num)
-    print 14314
-    if abs(len(token2num) - 14314) > 100: 
-        raise NotImplementedError
-    
+        
     expected_inside_words = numpy.zeros((T, ))
     expected_outside_words = numpy.zeros((T, ))
     expected_surprise_outside_words = numpy.zeros((T, ))
     with codecs.open("docword_rtl-wiki.txt", "r", encoding="utf8") as fin:
-        for doc_id, line in tqdm(enumerate(fin), total=7838):
+        for doc_id, line in tqdm(enumerate(fin)):
             local_theta, local_expected_words, local_top_words, words_data = get_stuff(line, token2num, displayed_word_ids)
 
             for topic in range(T):
@@ -93,18 +79,10 @@ def calc_outside_prob(T, lda_phi, token2num, displayed_word_ids):
     print expected_inside_words/(expected_outside_words + expected_inside_words)
     return expected_inside_words, expected_outside_words
 
-#displayed_word_ids = get_displayed_words_for_every_topic(T, lda_phi, num2token)
-#calc_outside_prob(T, lda_phi, token2num, displayed_word_ids)
+displayed_word_ids = get_displayed_words_for_every_topic(T, lda_phi, num2token)
+calc_outside_prob(T, lda_phi, token2num, displayed_word_ids)
 
-'''
-dictionary_name = 'dictionary'
-pwt = 'pwt'
-nwt = 'nwt'
-rwt = 'rwt'
-docword = 'docword_rtl-wiki_common.txt'
-'''
-
-
+raise NotImplementedError
 
 
 dn = "rtl-wiki_fromblei"
@@ -129,7 +107,7 @@ model, tt, attached_phi = tweak_phi(lda_phi, num2token, token2num, dn, regs, num
 
 def convert_phi(topic_model, phi_numpy_matrix, num_topics, vocab_size, target_class):
 
-    result = np.zeros((vocab_size, num_topics))
+    result = numpy.zeros((vocab_size, num_topics))
     classes = getattr(topic_model, 'class_id')
     
     
