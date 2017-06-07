@@ -1,6 +1,7 @@
 import pickle 
 import numpy
 import matplotlib.pyplot as plt
+import pandas as pd
 
 import model_utils
 
@@ -20,16 +21,11 @@ model.num_document_passes = 1
 model.fit_offline(batch_vectorizer=batch_vectorizer, num_collection_passes=1)
 
 
-
-def human_readable_dict(phi_data):
-    tokens = getattr(phi_data, 'token')
-    num_2_token = {i: tok for i, tok in enumerate(tokens)}
-    return num_2_token
-
-phi_data, plsa_phi = model.master.attach_model('pwt')
 plsa_theta = model.get_theta()
-num_2_token = human_readable_dict(phi_data)
+df_phi = model.get_phi()
+num_2_token = list(df_phi.index)
 
+plsa_phi = numpy.array(df_phi)
 
 def calc_weighted_pk(phi, theta):
     '''
@@ -47,14 +43,15 @@ def calc_weighted_pk(phi, theta):
     '''
     n_k = numpy.sum(theta, axis=1)
     p_k = n_k / numpy.sum(n_k)
-    
+
+    print p_k[:, numpy.newaxis].shape, phi.transpose().shape
     weighted_pk = p_k[:, numpy.newaxis] * phi.transpose()
-    return weighted_pk
+    return weighted_pk, p_k
 
 
 
 def calc_ptw(phi, theta):
-    weighted_pk = calc_weighted_pk(phi, theta)
+    weighted_pk, p_k = calc_weighted_pk(phi, theta)
     return weighted_pk / numpy.sum(weighted_pk, axis=0) # sum by all T
 
     
@@ -69,11 +66,12 @@ def calc_LR_vectorised(phi, theta):
     numerator and denominator are calculated separately
     """
 
-    weighted_pk = calc_weighted_pk(phi, theta)
+    weighted_pk, p_k = calc_weighted_pk(phi, theta)
+    
+    print phi.transpose().shape, (1 - p_k[:, numpy.newaxis]).shape
             
     numerator = phi.transpose() * (1 - p_k[:, numpy.newaxis])
     denominator = (numpy.sum(weighted_pk, axis=0) - weighted_pk)
-    #denominator[denominator < eps] = eps
     
     target_values = numerator / denominator
     target_values[denominator == 0] = float("-inf") # infinite likelihood ratios aren't interesting

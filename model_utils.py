@@ -58,10 +58,6 @@ def read_vocab_blei():
             num2token[i] = line.strip()
             token2num[line.strip()] = i
     return num2token, token2num
-
-
-def blei2artm():
-    pass
     
 def artm2blei():
     pass
@@ -73,4 +69,64 @@ def get_top_indices(target_values, N):
     ids = np.array(range(len(target_values)))
     ids = ids[order]
     return ids[:N]
+
+def raw_phi2artm(initial_phi, phi_num2token, phi_tok2num, dictionary, regs, scores, topic_names, stopwords=None):
+    num_topics = len(topic_names)
+    model_name = 'pwt'
+    model = artm.ARTM(topic_names=topic_names, 
+                       scores=scores,
+                       regularizers=[],
+                       cache_theta=True)
+
+    model.initialize(dictionary=dictionary)
+
+    for reg in regs:
+        model.regularizers.add(reg)
+        
+    protobuf_data, phi_numpy_matrix = model.master.attach_model("pwt")
+    phi_numpy_matrix[:, :] = 0
     
+    classes = getattr(protobuf_data, 'class_id')
+    tokens = getattr(protobuf_data, 'token')
+    data = zip(classes, tokens)
+
+    bcg_base = 0
+    for i, datum in enumerate(data):
+        (class_, token) = datum
+        if token in phi_tok2num:
+            imported_id = phi_tok2num[token]
+            phi_numpy_matrix[i, :num_topics] = initial_phi[imported_id, :]
+        else:
+            if token in stopwords:
+                phi_numpy_matrix[i, num_topics] = 1
+            else:
+                phi_numpy_matrix[i, num_topics] = 0.01
+    phi_numpy_matrix /= np.sum(phi_numpy_matrix, axis=0)
+    #numpy.copyto(phi_numpy_matrix, initial_phi)
+
+    return model, protobuf_data, phi_numpy_matrix
+
+
+    
+'''    
+def tweak_phi(lda_phi, num2token, token2num, dn, regs, num_document_passes, num_outer_iterations, topic_names):
+    docword = 'docword_{}.txt'.format(dn)
+    data_path = os.path.join(os.path.abspath(os.getcwd()), docword)
+
+    batch_vectorizer = get_batch_vectorizer(dn, data_path)
+    dictionary = get_dict(dn, batch_vectorizer)
+
+    scores = [
+    artm.PerplexityScore(name='PerplexityScore', dictionary=dictionary),
+    artm.SparsityPhiScore(name='SparsityPhiScore'),
+    artm.SparsityThetaScore(name='SparsityThetaScore'),
+    artm.TopicKernelScore(name='TopicKernelScore', probability_mass_threshold=0.3),
+    artm.TopTokensScore(name='TopTokensScore', num_tokens=10)
+    ]
+
+    model, topic_model, phi_numpy_matrix = prepare_model(lda_phi, num2token, token2num, dictionary, regs, scores, num_document_passes, topic_names)
+    model.fit_offline(batch_vectorizer=batch_vectorizer, num_collection_passes=num_outer_iterations)
+    topic_model, phi_numpy_matrix = model.master.attach_model("pwt")
+
+    return model, topic_model, phi_numpy_matrix
+'''
