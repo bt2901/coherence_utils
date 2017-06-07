@@ -1,0 +1,287 @@
+a fourth generation programming language 1970s 1990 abbreviated 4gl is a programming language or programming environment designed with a specific purpose in mind such as the development of commercial business softwareappgen collaborative commerce platform  in the evolution of computing the 4gl followed the 3gl in an upward trend toward higher abstraction and statement power the 4gl was followed by efforts to define and use a 5gl
+
+the natural language block structured mode of the third generation programming languages improved the process of software development however 3gl development methods can be slow and error prone it became clear that some applications could be developed more rapidly by adding a higher level programming language and methodology which would generate the equivalent of very complicated 3gl instructions with fewer errors in some senses software engineering arose to handle 3gl development 4gl and 5gl projects are more oriented toward problem solving and systems engineering
+
+all 4gls are designed to reduce programming effort the time it takes to develop software and the cost of software development they are not always successful in this task sometimes resulting in inelegant and unmaintainable code however given the right problem the use of an appropriate 4gl can be spectacularly successful as was seen with mark iv and mapper see history section santa fe real time tracking of their freight cars the productivity gains were estimated to be 8 times over cobol the usability improvements obtained by some 4gls and their environment allowed better exploration for heuristic solutions than did the 3gl
+
+a quantitative definition of 4gl has been set by capers jones as part of his work on function point analysis jones defines the various generations of programming languages in terms of developer productivity measured in function points per staff month a 4gl is defined as a language that supports 12 20 fpsm this correlates with about 16 27 lines of code per function point implemented in a 4gl
+
+fourth generation languages have often been compared to domain specific programming languages dsls some researchers state that 4gls are a subset of dsls 35th hawaii international conference on system sciences 1002 domain specific languages for software engineering
+
+given the persistence of assembly language even now in advanced development environments ms studio one expects that a system ought to be a mixture of all the generations with only very limited use of the first
+
+history
+
+though used earlier in papers and discussions the term 4gl was first used formally by james martin in his 1982 book applications development without programmers martin james application development without programmers prentice hall 1981 isbn 0 13 038943 9 to refer to non procedural high level specification languages in some primitive way ibms rpg 1960 could be described as the first 4gl followed closely by others such as the informatics mark iv 1967 product and sperrys mapper 1969 internal use 1979 release
+
+the motivations for the 4gl inception and continued interest are several the term can apply to a large set of software products it can also apply to an approach that looks for greater semantic properties and implementation power just as the 3gl offered greater power to the programmer so too did the 4gl open up the development environment to a wider population
+
+in a sense the 4gl is an example of black box processing each generation in the sense of the page is further from the machine see the computer science history in regard to data structure improvements and information hiding it is this latter nature that is directly associated with 4gl having errors that are harder in many cases to debug in terms of applications a 4gl could be business oriented or it could deal with some technical domain being further from the machine implies being closer to domain given the wide disparity of concepts and methods across domains 4gl limitations lead to recognition of the need for the 5gl
+
+the early input scheme for the 4gl supported entry of data within the 72 character limit 8 bytes used for sequencing of the punched card where a cards tag would identify the type or function with judicious use of a few cards the 4gl deck could offer a wide variety of processing and reporting capability whereas the equivalent functionality coded in a 3gl could subsume perhaps a whole box or more of cardscolumbia university computing history ibm cards
+
+the 72 character metaphor continued for a while as hardware progressed to larger memory and terminal interfaces even with its limitations this approach supported highly sophisticated applications
+
+as interfaces improved and allowed longer statement lengths and grammar driven input handling greater power ensued an example of this is described on the nomad page
+
+another example of nomads power is illustrated by nicholas rawlings in his comments for the computer history museum about ncss see citation below he reports that james martin asked rawlings for a nomad solution to a standard problem martin called the engineers problem give 6 raises to engineers whose job ratings had an average of 7 or better martin provided a dozen pages of cobol and then just a page or two of mark iv from informatics rawlings offered the following single statement performing a set at a time operation 
+
+
+
+the 4gl evolution was influenced by several factors with the hardware and operating system constraints having a large weight when the 4gl was first introduced a disparate mix of hardware and operating systems mandated custom application development support that was specific to the system in order to ensure sales one example is the mapper system developed by sperry though it has roots back to the beginning the system has proven successful in many applications and has been ported to modern platforms the latest variant is embedded in the bis unisys business information server bis offering of unisys mark iv is now known as visionbuilder and is offered by computer associates
+
+santa fe railroad used mapper to develop a system in a project that was an early example of 4gl rapid prototyping and programming by users louis schlueter user designed computing the next generation 1988 book on report generator and mapper systems the idea was that it was easier to teach railroad experts to use mapper than to teach programmers the intricacies of railroad operations mcnurlin  sprague technologies for developing systems information systems management in practice prentice hall 2003 isbn 0 13 101139 1
+
+one of the early and portable languages that had 4gl properties was ramis developed by gerald c cohen at mathematica a mathematical software company cohen left mathematica and founded information builders to create a similar reporting oriented 4gl called focus
+
+later 4gl types are tied to a database system and are far different from the earlier types in their use of techniques and resources that have resulted from the general improvement of computing with time
+
+an interesting twist to the 4gl scene is realization that graphical interfaces and the related reasoning done by the user form a language that is poorly understood
+
+types
+
+
+
+a number of different types of 4gls exist
+
+table driven codeless programming usually running with runtime framework and libraries instead of using code the developer defines his logic by selecting an operation in a pre defined list of memory or data table manipulation commands in other words instead of coding the developer uses table driven algorithm programming a good example of this type of 4gl language is edeveloper these type of tool can be used for business application development usually consisting in a package allowing for both business data manipulation and reporting therefore they come with gui screens and report editors they usually offer integration with lower level dlls generated from a typical 3gl for when the need arise for more hardwareos specific operations
+
+report generators take a description of the data format and the report to generate and from that they either generate the required report directly or they generate a program to generate the report
+
+similarly forms generators manage online interactions with the application system users or generate programs to do so
+
+more ambitious 4gls sometimes termed fourth generation environments attempt to automatically generate whole systems from the outputs of case tools specifications of screens and reports and possibly also the specification of some additional processing logic
+
+data management 4gls such as sas spss and stata provide sophisticated coding commands for data manipulation file reshaping case selection and data documentation in the preparation of data for statistical analysis and reporting
+
+some 4gls have integrated tools which allow for the easy specification of all the required information
+
+james martins own information engineering systems development methodology was automated to allow the input of the results of system analysis and design in the form of data flow diagrams entity relationship diagrams entity life history diagrams etc from which hundreds of thousands of lines of cobol would be generated overnight
+
+more recently oracle corporations oracle designer and oracle developer 4gl products could be integrated to produce database definitions and the forms and reports programs
+
+some fourth generation languages
+
+general use  versatile
+
+clipper
+
+dataflex
+
+forté tool transactional object oriented language
+
+foxpro
+
+ibm rational egl enterprise generation language
+
+panther
+
+powerbuilder
+
+sheerpower4gl microsoft windows only
+
+sqlwindowsteam developer
+
+windev
+
+up  5gl
+
+visual dataflex microsoft windows only
+
+discovery machine modeler
+
+agile business suite
+
+database query languages
+
+focus
+
+genero
+
+sbsystembuilder
+
+informix 4gl
+
+natural
+
+progress 4gl
+
+sql
+
+report generators
+
+buildprofessional
+
+gembase
+
+idl pvwave
+
+linc
+
+metafont
+
+natural
+
+oracle reports
+
+progress 4gl queryresults
+
+quest
+
+report builder
+
+rpg ii
+
+data manipulation analysis and reporting languages
+
+ab initio
+
+abap
+
+aubit 4gl
+
+audit command language
+
+clarion programming language
+
+corvision
+
+culprit
+
+adsonline plus transaction processing
+
+dasl
+
+focus
+
+graphtalk
+
+idl
+
+igor pro
+
+informix 4gl
+
+lansa
+
+labview
+
+mapper unisyssperry now part of bis
+
+mark iv sterlinginformatics now visionbuilder of ca
+
+mathematica
+
+matlab
+
+natural
+
+nomad
+
+plsql
+
+progress 4gl
+
+proiv
+
+r
+
+ramis
+
+s
+
+sas
+
+spss
+
+stata
+
+synon
+
+xbase
+
+sqr
+
+data stream languages
+
+ape
+
+avs
+
+iris explorer
+
+database driven gui application development
+
+action request system
+
+genexus
+
+sbsystembuilder
+
+progress dynamics
+
+uniface
+
+screen painters and generators
+
+fourgen case tools for rapid application development by gillani
+
+sbsystembuilder
+
+oracle forms
+
+progress 4gl provision
+
+unify accell
+
+gui creators
+
+4th dimension software
+
+edeveloper
+
+matlabs guide
+
+omnis studio
+
+openroad
+
+progress 4gl appbuilder
+
+revolution programming language
+
+sculptor 4gl
+
+web development languages
+
+coldfusion
+
+css
+
+wavemaker open source browser based development platform for ajax development based on dojo spring hibernate
+
+see also
+
+domain specific programming language
+
+rapid application development
+
+external links
+
+fourgen case tools rapid application development environment
+
+four js development tools genero genero studio
+
+fourth generation environments
+
+4gl gplgnu opensource development tools project
+
+domain specific languages for software engineering compares 4gls to dsls
+
+the fourgen site
+
+the gillani fourgen site
+
+up  5gl to consolidate or to build component based applications
+
+references

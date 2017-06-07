@@ -1,0 +1,22 @@
+foundationalism is any theory in epistemology typically theories of justification but also of knowledge that holds that beliefs are justified known etc based on what are called basic beliefs also commonly called foundational beliefs basic beliefs are beliefs that give justificatory support to other beliefs and more derivative beliefs are based on those more basic beliefs the basic beliefs are said to be self justifying or self evident that is they enjoy a non inferential warrant or justification ie they are not justified by other beliefs typically and historically foundationalists have held either that basic beliefs are justified by mental events or states such as experiences that do not constitute beliefs these are called nondoxastic mental states or that they simply are not the type of thing that can be or needs to be justified
+
+hence generally a foundationalist might offer the following theory of justification
+
+a belief is epistemically justified if and only if 1 it is justified by a basic belief or beliefs or 2 it is justified by a chain of beliefs that is supported by a basic belief or beliefs and on which all the others are ultimately based
+
+a basic belief on the other hand does not require justification because it is a different kind of belief than a non foundational one
+
+historical foundationalism rationalism vs empiricism
+
+historically two varieties of foundationalist theories were rationalism and empiricism or british empiricism strictly speaking neither empiricism nor rationalism is necessarily committed to foundationalism it is possible to be an empiricist coherentist for example and that was a common epistemological position in 20th century philosophy
+
+rationalism is the general name for epistemological theories that maintain that reason is the source and criterion of knowledge rationalists generally hold that so called truths of reason are the most important epistemologically basic propositions the historical continental rationalism expounded by rené descartes is often regarded as antithetical to empiricism while some contemporary rationalists assert that reason is strongest when it is supported by or consistent with empirical evidence and hence relies heavily on empirical science in analyzing justifications for belief descartes famously held that some of these truths are known innately and therefore constitute basic innate knowledge a view not always held in contemporary rationalism
+
+empiricism is the general name for epistemological theories that maintain that sensation reports are the source and criterion of knowledge classical empiricists generally held that such reports are indubitable and incorrigible and therefore worthy of serving as epistemologically basic propositions
+
+alternatives to foundationalism
+
+alternatives to foundationalism usually called anti foundationalism include coherentism foundherentism and reformed epistemology many forms of reliabilism are foundationalist but reliabilist theories need not be foundationalist see also pragmatism postfoundationalism and critical rationalism
+
+references
+

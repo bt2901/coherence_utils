@@ -1,0 +1,51 @@
+2001 mars odyssey is a robotic spacecraft orbiting the planet mars its mission is to use spectrometers and imagers to hunt for evidence of past or present water and volcanic activity on mars it is hoped that the data odyssey obtains will help answer the question of whether life has ever existed on mars it also acts as a relay for communications between the mars explorations rovers and phoenix lander to earth the mission was named after the movie 2001 a space odyssey and refers to the differences between the movie and real life by the year 2001
+
+odyssey was launched april 7 2001 on a delta ii rocket from cape canaveral air force station and reached mars on october 24 2001 0230 universal time october 23 730 pm pdt 1030 edt the spacecrafts main engine fired to brake the spacecrafts speed and allowed it to be captured into orbit around mars odyssey used a technique called aerobraking that gradually brought the spacecraft closer to mars with each orbit by using the atmosphere of mars to slow down the spacecraft in its orbit rather than firing its engine or thrusters odyssey was able to save more than 200 kilograms 440 pounds of propellant aerobraking ended in january and odyssey began its science mapping mission on february 19 2002
+
+scientific instruments
+
+the three primary instruments odyssey uses are the
+
+thermal emission imaging system themis
+
+gamma ray spectrometer grs which includes the high energy neutron detector hend provided by russia
+
+mars radiation environment experiment marie
+
+on may 28 2002 nasa reported that odysseys grs had detected large amounts of hydrogen a sign that there must be ice lying within a meter of the planets surface
+
+mission
+
+nasa has approved a third two year extended mission through september 2010 to allow for the observation of year to year differences in phenomena like polar ice clouds and dust storms as well as a much more sensitive mapping of martian minerals on september 30 2008 the spacecraft activated its thrusters for 6 min to begin altering the spacecrafts orbit to gain an even better sensitivity for its infrared mapping of martian minerals the change will cause the spacecraft to move from a late afternoon orbit to a mid afternoon orbit over time by decreasing the time it passed over a location by 20 second per day until a new thruster burn in late 2009 will solidify the orbit unfortunately the new orbit will eliminate the use of one of the instruments the gamma ray spectrometer suite due to potential overheating of the instrument at the new orbit the extension will also continue odysseys support for other mars missions the orbiter contains enough propellant to operate at least until 2015 about 85 percent of images and other data from nasas twin mars rovers spirit and opportunity have reached earth via communications relay by odyssey which receives transmissions from both rovers every day the orbiter helped analyze potential landing sites for the rovers and performed the same task for nasas phoenix mission which landed on mars in may 2008 odyssey aided nasas mars reconnaissance orbiter which reached mars in march 2006 by monitoring atmospheric conditions during months when the newly arrived orbiter used aerobraking to alter its orbit into the desired shape
+
+water on mars
+
+on july 31 2008 nasa announced that the phoenix lander confirmed the presence of water on mars confirmation of water on mars as predicted on 2002 by the odyssey orbiter the science team is trying to determine whether the water ice ever thaws enough to be available for biology and if carbon containing chemicals and other raw materials for life are present
+
+naming
+
+mars odyssey was originally named the mars surveyor 2001 orbiter and was intended to have a companion spacecraft known as mars surveyor 2001 lander the lander mission was canceled in may 2000 following the failures of mars climate orbiter and mars polar lander in late 1999 subsequently the name 2001 mars odyssey was selected for the orbiter as a specific tribute to the vision of space exploration shown in works by arthur c clarke including 2001 a space odyssey the music from mythodea by greek composer vangelis was used as the theme music for the mission
+
+the project was developed by nasa and contracted out to lockheed martin the expected cost for the entire mission is us297 million
+
+see also
+
+exploration of mars
+
+nickel hydrogen battery
+
+space exploration
+
+
+
+references
+
+external links
+
+the mars odyssey site
+
+the mars odyssey blog
+
+mars 2001 odyssey mission profile by nasas solar system exploration
+
+bbc news story on mars odyssey observations of apparent ice deposits

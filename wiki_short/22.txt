@@ -1,0 +1,215 @@
+an abacus also called a counting frame is a calculating tool used primarily in parts of asia for performing arithmetic processes today abacuses are often constructed as a bamboo frame with beads sliding on wires but originally they were beans or stones moved in grooves in sand or on tablets of wood stone or metal the abacus was in use centuries before the adoption of the written modern numeral system and is still widely used by merchants traders and clerks in asia africa and elsewhere
+
+the user of an abacus is called an abacist who slides the beads of the abacus by hand abacist abacus in merriam websters third new international dictionary unabridged 2000 version 25
+
+etymology
+
+the use of the word abacus dates before 1387 ad when a middle english work borrowed the word from latin to describe a sandboard abacus the latin word came from abakos hebrew ābāq dust the preferred plural of abacus is a subject of disagreement but both abacusesoxford english dictionary 1989 and abacimerriam websters 2003 are in use
+
+mesopotamian abacus
+
+the period 2700–2300 bc saw the first appearance of the sumerian abacus a table of successive columns which delimited the successive orders of magnitude of their sexagesimal number system
+
+babylonians may have used the abacus for the operations of addition and subtraction however this primitive device proved difficult to use for more complex calculations some scholars point to a character from the babylonian cuneiform which may have been derived from a representation of the abacus
+
+egyptian abacus
+
+the use of the abacus in ancient egypt is mentioned by the greek historian herodotus who writes that the manner of this disks usage by the egyptians was opposite in direction when compared with the greek method archaeologists have found ancient disks of various sizes that are thought to have been used as counters however wall depictions of this instrument have not been discovered casting some doubt over the extent to which this instrument was used
+
+iranian persian abacus
+
+during the achaemenid persian empire around 600 bc iranians first began to use the abacuswest asian mathematics history for kids under parthian and sassanian iranian empires scholars concentrated on exchanging knowledge and inventions by the countries around them – india china and the roman empire when it is thought to be expanded over the other countries
+
+greek abacus
+
+the earliest archaeological evidence for the use of the greek abacus dates to the 5th century bc the greek abacus was a table of wood pre set with small counters in wood or metal for mathematical calculations this greek abacus saw use in ancient rome and until the french revolution the western christian world
+
+a tablet found on the salamis in 1846 ad dates back to 300 bc it is a slab of white marble 149nbspcm long 75nbspcm wide and 45nbspcm thick on which are 5 groups of markings in the center of the tablet is a set of 5 parallel lines equally divided by a vertical line capped with a semicircle at the intersection of the bottom most horizontal line and the single vertical line below these lines is a wide space with a horizontal crack dividing it below this crack is another group of eleven parallel lines again divided into two sections by a line perpendicular to them but with the semicircle at the top of the intersection the third sixth and ninth of these lines are marked with a cross where they intersect with the vertical line
+
+roman abacus
+
+
+
+ this image is a 2004 photograph of the mainz reconstructioncopy of the
+
+original in the paris library it gives a much clearer picture that the
+
+device is not beads on wires than the drawing used in this entry earlier
+
+if we are only allowed one image then this is the better to use
+
+mfc 
+
+the normal method of calculation in ancient rome was by moving counters on a smooth table originally pebbles calculi were used later and in medieval europe jetons were manufactured marked lines indicated units fives tens etc as in the roman numeral system this system of counter casting continued into the late roman empire and in medieval europe and persisted in limited use into the nineteenth centurypullan page18
+
+writing in the 1st century bc horace refers to the wax abacus a board covered with a thin layer of black wax on which columns and figures were inscribed using a stylus
+
+one example of archaeological evidence of the roman abacus shown here in reconstruction dates to the 1st century ad it has eight long grooves containing up to five beads in each and eight shorter grooves having either one or no beads in each the groove marked i indicates units x tens and so on up to millions the beads in the shorter grooves denote fives – five units five tens etc essentially in a bi quinary coded decimal system obviously related to the roman numerals the short grooves on the right may have been used for marking roman ounces
+
+chinese abacus
+
+the earliest known written documentation of the chinese abacus dates to the 14th century ad
+
+the top of the abacus is called the heaven and the bottom is called the earthabacus
+
+the chinese abacus known as the suànpán is typically 20nbspcm tall and comes in various widths depending on the operator it usually has more than seven rods there are two beads on each rod in the upper deck and five beads each in the bottom for both decimal and hexadecimal computation modern abacuses have one bead on the top deck and four beads on the bottom deck the beads are usually rounded and made of a hardwood the beads are counted by moving them up or down towards the beam if you move them toward the beam you count their value if you move away you dont count their value the suanpan can be reset to the starting position instantly by a quick jerk along the horizontal axis to spin all the beads away from the horizontal beam at the center
+
+suanpans can be used for functions other than counting unlike the simple counting board used in elementary schools very efficient suanpan techniques have been developed to do multiplication division addition subtraction square root and cube root operations at high speed there are schools teaching students how to use it
+
+in the famous long scroll along the river during the qingming festival painted by zhang zeduan 1085–1145 ad during the song dynasty 960–1297 ad a suanpan is clearly seen lying beside an account book and doctors prescriptions on the counter of an apothecarys feibao
+
+the similarity of the roman abacus to the chinese one suggests that one could have inspired the other as there is some evidence of a trade relationship between the roman empire and china however no direct connection can be demonstrated and the similarity of the abaci may be coincidental both ultimately arising from counting with five fingers per hand where the roman model like most modern japanese has 4 plus 1 bead per decimal place the standard suanpan has 5 plus 2 allowing use with a hexadecimal numeral system instead of running on wires as in the chinese and japanese models the beads of roman model run in grooves presumably making arithmetic calculations much slower
+
+another possible source of the suanpan is chinese counting rods which operated with a decimal system but lacked the concept of zero as a place holder the zero was probably introduced to the chinese in the tang dynasty 618 907 ad when travel in the indian ocean and the middle east would have provided direct contact with india allowing them to acquire the concept of zero and the decimal point from indian merchants and mathematicians
+
+indian abacus
+
+first century sources such as the abhidharmakosa describe the knowledge and use of abacus in india around the 5th century indian clerks were already finding new ways of recording the contents of the abacus hindu texts used the term shunya zero to indicate the empty column on the abacus
+
+japanese abacus
+
+in japanese the abacus is called soroban  lit counting tray imported from china around 1600 the 14 abacus appeared circa 1930 and it is preferred and still manufactured in japan today even with the proliferation practicality and affordability of pocket electronic calculators the use of the soroban is still taught in japanese primary schools as a part of mathematics
+
+korean abacus
+
+the chinese abacus migrated from china to korea around the year 1400 ad koreans call it jupan 주판 supan 수판 or jusan 주산주판  daum 백과사전
+
+native american abaci
+
+some sources mention the use of an abacus called a nepohualtzintzin in ancient mayan culture this mesoamerican abacus used a 5 digit base 20 systemhttpwwwinaoepmxiberamia2004nepoenghtm
+
+the word nepohualtzintzin comes from the nahuatl and it is formed by the roots ne personal  pohual or pohualli the account  and tzintzin small similar elements and its complete meaning is taken as counting with small similar elements by somebody its use was taught in the kalmekak to the temalpouhkeh who were students dedicated to take the accounts of skies from childhood unfortunately the nepohualtzintzin and its teaching were among the victims of the conquering destruction when a diabolic origin was attributed to them after observing the tremendous properties of representation precision and speed of calculations but now we know with certainty that it is a concrete example of the great scientific and technological development that the majority of the native cultures already had in those times
+
+this arithmetic tool is based on the vigesimal system base 20 LINK the aztec the count by 20s was completely natural since the use of huaraches native sandals allowed them to also use the toes for their calculations in this way the amount of 20 meant to them a complete human being the nepohualtzintzin is divided in two main parts separated by a bar or intermediate cord in the left part there are four beads which in the first row have unitary values 1 2 3 and 4 and in the right side there are three beads with values of 5 10 and 15 respectively in order to know the value of the respective beads of the upper rows it is enough to multiply by 20 by each row the value of the corresponding account in the first row
+
+altogether there are 13 rows with 7 beads in each one which makes up 91 beads in each nepohualtzintzin this is a basic number to understand the close relation conceived between the exact accounts and the natural phenomena this is so that one nepohualtzintzin 91 represents the number of days that a season of the year lasts two nepohualtzitzin 182 is the number of days of the corn’s cycle from its sowing to its harvest three nepohualtzintzin 273 is the number of days of a baby’s gestation and four nepohualtzintzin complete a cycle and form a year it is worth to mention that in the nepohualtzintzin amounts in the rank from 10 to the 18 can be calculated with floating point which allows calculating stellar as well as infinitesimal amounts with absolute precision
+
+the rediscovering of the nepohualtzintzin is due to the teacher david esparza hidalgo who in his wandering by all mexico has found diverse engravings and paintings of this instrument and has reconstructed several of them made in gold jade incrustations of shell etc there have been also found very old nepohualtzintzin attributed to the olmeca culture and even some bracelets of mayan origin as well as a diversity of forms and materials in other cultures this gives us an idea of the so early epochs in which our ancestors already had the sufficient knowledge to devise and to handle a device of such complexity and the notion of the extension of its use in their daily activities
+
+the quipu of the incas was a system of knotted cords used to record numerical data like advanced tally sticks – but not used to perform calculations calculations were carried out using a yupana quechua for counting tool see figure which was still in use after the conquest of peru the working principle of a yupana is unknown but in 2001 an explanation of the mathematical basis of these instruments was proposed by comparing the form of several yupanas researchers found that calculations were based using the fibonacci sequence 1 1 2 3 5 and powers of 10 20 and 40 as place values for the different fields in the instrument using the fibonacci sequence would keep the number of grains within any one field at minimum
+
+russian abacus
+
+the russian abacus the schety счёты usually has a single slanted deck with ten beads on each wire except one wire which has four beads for quarter ruble fractions this wire is usually near the user older models have another 4 bead wire for quarter kopeks which were minted until 1916 the russian abacus is often used vertically with wires from left to right in the manner of a book the wires are usually bowed to bulge upward in the center in order to keep the beads pinned to either of the two sides it is cleared when all the beads are moved to the right during manipulation beads are moved to the left for easy viewing the middle 2 beads on each wire the 5th and 6th bead usually are of a different colour than the other eight beads likewise the left bead of the thousands wire and the million wire if present may have a different color
+
+the russian abacus was in use in all shops and markets throughout the former soviet union and the usage of it was taught in most schools until the 1990srobert bud deborah jean warner eds instruments of science an historical encyclopedia p7 taylor  francis 1998 isbn 0815315619sharon hudgins the other side of russia p219 texas am university press 2004 isbn 1585444049 today it is regarded as an archaism and replaced by microcalculator the use of calculators has been taught since the 1990s
+
+the russian abacus was brought to france around 1820 by the mathematician jean victor poncelet who served in napoleons army and had been a prisoner of war in russiageorg trogemann alexander y nitussov wolfgang ernst computing in russia the history of computer devices and information technology revealed p24 viewegteubner verlag 2001 isbn 3528057572 the abacus had fallen out of use in western europe in the 16th century with the rise of decimal notation and algorismic methods to poncelets french contemporaries it was something new poncelet used it not for any applied purpose but as a teaching and demonstration aidgraham flegg numbers their history and meaning p72 courier dover publications 2002 isbn 0486421651
+
+school abacus
+
+
+
+around the world abaci have been used in pre schools and elementary schools as an aid in teaching the numeral system and arithmetic
+
+in western countries a bead frame similar to the russian abacus but with straight wires and a vertical frame has been common see image it is still often seen as a plastic or wooden toy
+
+the type of abacus shown here is often used to represent numbers without the use of place value each bead and each wire has the same value and used in this way it can represent numbers up to 100
+
+abaci in medieval pictures
+
+
+
+imagegregor reisch margarita philosophica 1508 1230x1615png
+
+imagerechentischpng
+
+imagerechnung auff der linihen und federnjpg
+
+imageköbel böschenteyn 1514jpg
+
+imagerechnung auff der linihen 1525 adam riespng
+
+image1543 robert recordepng
+
+imagepeter apian 1544png
+
+imageadam riesenjpg
+
+imagerekenaar 1553jpg
+
+
+
+uses by the blind
+
+an adapted abacus invented by tim cranmer called a cranmer abacus is still commonly used by individuals who are blind a piece of soft fabric or rubber is placed behind the beads so that they do not move inadvertently this keeps the beads in place while the users feel or manipulate them they use an abacus to perform the mathematical functions multiplication division addition subtraction square root and cubic root
+
+although blind students have benefited from talking calculators the abacus is still very often taught to these students in early grades both in public schools and state schools for the blind the abacus teaches mathematical skills that can never be replaced with talking calculators and is an important learning tool for blind students blind students also complete mathematical assignments using a braille writer and nemeth code a type of braille code for mathematics but large multiplication and long division problems can be long and difficult the abacus gives blind and visually impaired students a tool to compute mathematical problems that equals the speed and mathematical knowledge required by their sighted peers using pencil and paper many blind people find this number machine a very useful tool throughout life
+
+see also
+
+abacus logic
+
+abacus system
+
+chisanbop
+
+napiers bones
+
+sand table
+
+suanpan
+
+soroban
+
+notes
+
+references
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+further reading
+
+
+
+
+
+external links
+
+tutorials
+
+
+
+min multimedia
+
+
+
+
+
+abacus curiosities
+
+
+
+
+
+
+
+abacus in various number systems at cut the knot
+
+java applet of chinese japanese and russian abaci
+
+an atomic scale abacus
+
+groups
+
+fédération française de calcul mental

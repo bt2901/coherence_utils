@@ -1,0 +1,285 @@
+in mathematics fourier analysis is a subject area which grew out of the study of fourier series the subject began with trying to understand when it was possible to represent general functions by sums of simpler trigonometric functions the attempt to understand functions or other objects by breaking them into basic pieces that are easier to understand is one of the central themes in fourier analysis fourier analysis is named after joseph fourier who showed that representing a function by a trigonometric series greatly simplified the study of heat propagation
+
+today the subject of fourier analysis encompasses a vast spectrum of mathematics with parts that at first glance may appear quite different in the sciences and engineering the process of decomposing a function into simpler pieces is often called an analysis the corresponding operation of rebuilding the function from these pieces is known as synthesis in this context the term fourier synthesis describes the act of rebuilding and the term fourier analysis describes the process of breaking the function into a sum of simpler pieces in mathematics the term fourier analysis often refers to the study of both operations
+
+in fourier analysis the term fourier transform often refers to the process that decomposes a given function into the basic pieces this process results in another function that describes how much of each basic piece are in the original function however the transform is often given a more specific name depending upon the domain and other properties of the function being transformed as elaborated below moreover the original concept of fourier analysis has been extended over time to apply to more and more abstract and general situations and the general field is often known as harmonic analysis
+
+each transform used for analysis see list of fourier related transforms has a corresponding inverse transform that can be used for synthesis
+
+applications
+
+fourier analysis has many scientific applications in physics partial differential equations number theory combinatorics signal processing imaging probability theory statistics option pricing cryptography numerical analysis acoustics oceanography optics diffraction geometry and other areas
+
+this wide applicability stems from many useful properties of the transforms
+
+the transforms are linear operators and with proper normalization are unitary as well a property known as parsevals theorem or more generally as the plancherel theorem and most generally via pontryagin duality
+
+the transforms are usually invertible and when they are the inverse transform has a similar form as the forward transform
+
+the exponential functions are eigenfunctions of differentiation which means that this representation transforms linear differential equations with constant coefficients into ordinary algebraic ones  for example in a linear time invariant physical system frequency is a conserved quantity so the behavior at each frequency can be solved independently
+
+by the convolution theorem fourier transforms turn the complicated convolution operation into simple multiplication which means that they provide an efficient way to compute convolution based operations such as polynomial multiplication and multiplying large numbers 
+
+the discrete version of the fourier transform see below can be evaluated quickly on computers using fast fourier transform fft algorithms
+
+fourier transformation is also useful as a compact representation of a signal for example jpeg compression uses a variant of the fourier transformation discrete cosine transform of small square pieces of a digital image the fourier components of each square are rounded to lower arithmetic precision and weak components are eliminated entirely so that the remaining components can be stored very compactly in image reconstruction each fourier transformed image square is reassembled from the preserved approximate components and then inverse transformed to produce an approximation of the original image
+
+applications in signal processing
+
+when processing signals such as audio radio waves light waves seismic waves and even images fourier analysis can isolate individual components of a compound waveform concentrating them for easier detection andor removal a large family of signal processing techniques consist of fourier transforming a signal manipulating the fourier transformed data in a simple way and reversing the transformation
+
+some examples include
+
+telephone dialing the touch tone signals for each telephone key when pressed are each a sum of two separate tones frequencies fourier analysis can be used to separate or analyze the telephone signal to reveal the two component tones and therefore which button was pressed
+
+removal of unwanted frequencies from an audio recording used to eliminate hum from leakage of ac power into the signal to eliminate the stereo subcarrier from fm radio recordings
+
+noise gating of audio recordings to remove quiet background noise by eliminating fourier components that do not exceed a preset amplitude
+
+equalization of audio recordings with a series of bandpass filters
+
+digital radio reception with no superheterodyne circuit as in a modern cell phone or radio scanner
+
+to remove periodic or anisotropic artifacts such as jaggies from interlaced video stripe artifacts from strip aerial photography or wave patterns from radio frequency interference in a digital camera
+
+cross correlation of similar images for co alignment
+
+x ray crystallography to reconstruct a proteins structure from its diffraction pattern
+
+fourier transform ion cyclotron resonance mass spectrometry to determine the mass of ions from the frequency of cyclotron motion in a magnetic field
+
+variants of fourier analysis
+
+fourier analysis has different forms some of which have different names below are given several of the most common variants variations with different names usually reflect different properties of the function or data being analyzed the resultant transforms can be seen as special cases or generalizations of each other
+
+continuous fourier transform
+
+most often the unqualified term fourier transform refers to the transform of functions of a continuous real argument such as time t in this case the fourier transform describes a function ƒt in terms of basic complex exponentials of various frequencies in terms of ordinary frequency ν the fourier transform is given by the complex number
+
+fnu  int inftyinfty ft cdot e 2pi cdot i cdot nu cdot t dt
+
+evaluating this quantity for all values of ν produces the frequency domain function
+
+also see how it works below see fourier transform for even more information including
+
+the inverse transform fν → ƒt
+
+conventions for amplitude normalization and frequency scalingunits
+
+transform properties
+
+tabulated transforms of specific functions
+
+an extensiongeneralization for functions of multiple dimensions such as images
+
+fourier series
+
+fourier analysis for functions defined on a circle or equivalently for periodic functions mainly focuses on the study of fourier series suppose that ƒx is periodic function with period 2π in this case one can attempt to decompose ƒx as a sum of complex exponentials functions the coefficients fn of the complex exponential in the sum are referred to as the fourier coefficients for ƒ and are analogous to the fourier transform of a function on the line  the term fourier series expansion or simply fourier series refers to the infinite series that appears in the inverse transform the fourier coefficients of ƒx are given by
+
+fn  frac12pi int02pi fx e i n x  dx
+
+for all integers n and the fourier series of ƒx is given by
+
+fxsumn inftyinfty fn ei n x
+
+equality may not always hold in the equation above and the study of the convergence of fourier series is a central part of fourier analysis of the circle
+
+analysis of periodic functions or functions with limited duration
+
+when ƒx has finite duration or compact support a discrete subset of the values of its continuous fourier transform is sufficient to reconstructrepresent the function ƒx on its support one such discrete set is obtained by treating the duration of the segment as if it is the period of a periodic function and computing the fourier coefficients putting convergence issues aside the fourier series expansion will be a periodic function not the finite duration function ƒx but one period of the expansion will give the values of ƒx on its support
+
+see fourier series for more information including
+
+fourier series expansions for general periods
+
+transform properties
+
+historical development
+
+special cases and generalizations
+
+discrete time fourier transform dtft
+
+for functions of an integer index the discrete time fourier transform dtft provides a useful frequency domain transform
+
+a useful discrete time function can be obtained by sampling a continuous time function st which produces a sequence snt for integer values of n and some time interval t if information is lost then only an approximation to the original transform sf can be obtained by looking at one period of the periodic function
+
+stf  sumk inftyinfty sleftf fracktright equiv sumn inftyinfty underbracetcdot sntsn cdot e i 2pi f n t
+
+which is the dtft the identity above is a result of the poisson summation formula the dtft is also equivalent to the fourier transform of a continuous function that is constructed by using the sn sequence to modulate a dirac comb
+
+applications of the dtft are not limited to sampled functions it can be applied to any discrete sequence see discrete time fourier transform for more information on this and other topics including
+
+the inverse transform
+
+normalized frequency units
+
+windowing finite length sequences
+
+transform properties
+
+tabulated transforms of specific functions
+
+discrete fourier transform dft
+
+since the dtft is also a continuous fourier transform of a comb function the fourier series also applies to it thus when sn is periodic with period n nbspstƒ is another dirac comb function modulated by the coefficients of a fourier series nbspand the integral formula for the coefficients simplifies to
+
+sk  sumn0n 1 sn cdot e i 2 pi frackn n nbsp nbsp for all integer values of k
+
+since the dtft is periodic so is sk and it has the same period n as the input function this transform is also called dft particularly when only one period of the output sequence is computed from one period of the input sequence
+
+when sn is not periodic but its non zero portion has finite duration n nbspstƒ is continuous and finite valued but a discrete subset of its values is sufficient to reconstructrepresent the finite portion of sn that was analyzed the same discrete set is obtained by treating n as if it is the period of a periodic function and computing the fourier series coefficients  dft
+
+the inverse transform of sk does not produce the finite length sequence sn when evaluated for all values of n nbspit takes the inverse of stƒ to do that the inverse dft can only reproduce the entire time domain if the input happens to be periodic forever therefore it is often said that the dft is a transform for fourier analysis of finite domain discrete time functions nbspan alternative viewpoint is that the periodicity is the time domain consequence of approximating the continuous domain function stƒ with the discrete subset sk nbspn can be larger than the actual non zero portion of sn nbspthe larger it is the better the approximation also known as zero padding
+
+the dft can be computed using a fast fourier transform fft algorithm which makes it a practical and important transformation on computers
+
+see discrete fourier transform for much more information including
+
+the inverse transform
+
+transform properties
+
+applications
+
+tabulated transforms of specific functions
+
+the following table recaps the four basic forms discussed above highlighting the duality of the properties of discreteness and periodicity ie if the signal representation in one domain has either or both of those properties then its transform representation to the other domain has the other property or both
+
+name time domain frequency domain domain property function property domain property function propertycontinuous fourier transform continuous aperiodic continuous aperiodic discrete time fourier transform discrete aperiodic continuous periodic ƒs fourier series continuous periodic tau discrete aperiodic discrete fourier transform discrete periodic n
+
+or n is simply the length of a finite sequence nbspin either case the inverse dft formula produces a periodic function sn
+
+discrete periodic n
+
+fourier transforms on arbitrary locally compact abelian topological groups
+
+the fourier variants can also be generalized to fourier transforms on arbitrary locally compact abelian topological groups which are studied in harmonic analysis there the fourier transform takes functions on a group to functions on the dual group this treatment also allows a general formulation of the convolution theorem which relates fourier transforms and convolutions see also the pontryagin duality for the generalized underpinnings of the fourier transform
+
+time–frequency transforms
+
+in signal processing terms a function of time is a representation of a signal with perfect time resolution but no frequency information while the fourier transform has perfect frequency resolution but no time information
+
+as alternatives to the fourier transform in time–frequency analysis one uses time–frequency transforms to represent signals in a form that has some time information and some frequency information – by the uncertainty principle there is a trade off between these these can be generalizations of the fourier transform such as the short time fourier transform or fractional fourier transform or can use different functions to represent signals as in wavelet transforms and chirplet transforms with the wavelet analog of the continuous fourier transform being the continuous wavelet transform
+
+history
+
+a primitive form of harmonic series dates back to ancient babylonian mathematics where they were used to compute ephemeris tables of astronomical positions p 62 p 11
+
+in modern times variants of the discrete fourier transform were used by alexis clairaut in 1754 to compute an orbit p 30
+
+which has been described as the first formula for the dft p 4
+
+and in 1759 by joseph louis lagrange in computing the coefficients of a trigonometric series for a vibrating string p 2 technically clairauts work was a cosine only series a form of discrete cosine transform while lagranges work was a sine only series a form of discrete sine transform a true cosinesine dft was used by gauss in 1805 for trigonometric interpolation of asteroid orbitsheideman m t d h johnson and c s burrus gauss and the history of the fast fourier transform ieee assp magazine 1 4 14ndash21 1984
+
+euler and lagrange both discretized the vibrating string problem using what would today be called samples
+
+an early modern development toward fourier analysis was the 1770 paper réflexions sur la résolution algébrique des équations by lagrange which in the method of lagrange resolvents used a complex fourier decomposition to study the solution of a cubic
+
+ p 501
+
+lagrange transformed the roots x1x2x3 into the resolvents
+
+
+
+beginalign
+
+r1  x1  x2  x3
+
+r2  x1  zeta x2  zeta2 x3
+
+r3  x1  zeta2 x2  zeta x3
+
+endalign
+
+where ζ is a cubic root of unity which is the dft of order 3
+
+a number of authors notably jean le rond dalembert  and carl friedrich gauss used trigonometric series to study the heat equation but the breakthrough development was the 1807 paper
+
+mémoire sur la propagation de la chaleur dans les corps solides by joseph fourier whose crucial insight was to model all functions by trigonometric series introducing the fourier series
+
+historians are divided as to how much to credit lagrange and others for the development of fourier theory daniel bernoulli and leonhard euler had introduced trigonometric representations of functions and lagrange had given the fourier series solution to the wave equation so fouriers contribution was mainly the bold claim that an arbitrary function could be represented by a fourier series
+
+the subsequent development of the field is known as harmonic analysis and is also an early instance of representation theory
+
+the first fast fourier transform fft algorithm for the dft was discovered around 1805 by carl friedrich gauss when interpolating measurements of the orbit of the asteroids juno and pallas although that particular fft algorithm is more often attributed to its modern rediscoverers cooley and tukey p 31
+
+interpretation in terms of time and frequency
+
+in signal processing the fourier transform often takes a time series or a function of continuous time and maps it into a frequency spectrum that is it takes a function from the time domain into the frequency domain it is a decomposition of a function into sinusoids of different frequencies in the case of a fourier series or discrete fourier transform the sinusoids are harmonics of the fundamental frequency of the function being analyzed
+
+when the function ƒ is a function of time and represents a physical signal the transform has a standard interpretation as the frequency spectrum of the signal the magnitude of the resulting complex valued function f at frequency ω represents the amplitude of a frequency component whose initial phase is given by the phase of f
+
+however it is important to realize that fourier transforms are not limited to functions of time and temporal frequencies they can equally be applied to analyze spatial frequencies and indeed for nearly any function domain
+
+how it works a basic explanation
+
+to measure the amplitude and phase of a particular frequency component the transform process multiplies the original function the one being analyzed by a sinusoid with the same frequency called a basis function if the original function contains a component with the same shape ie same frequency its shape but not its amplitude is effectively squared
+
+squaring implies that at every point on the product waveform the contribution of the matching component to that product is a positive contribution even though the component might be negative
+
+squaring describes the case where the phases happen to match what happens more generally is that a constant phase difference produces vectors at every point that are all aimed in the same direction which is determined by the difference between the two phases to make that happen actually requires two sinusoidal basis functions cosine and sine which are combined into a basis function that is complex valued see complex exponential the vector analogy refers to the polar coordinate representation
+
+the complex numbers produced by the product of the original function and the basis function are subsequently summed into a single result
+
+note that if the functions are continuous rather than sets of discrete points this step requires integral calculus or numerical integration but the basic concept is just addition
+
+the contributions from the component that matches the basis function all have the same sign or vector direction the other components contribute values that alternate in sign or vectors that rotate in direction and tend to cancel out of the summation the final value is therefore dominated by the component that matches the basis function the stronger it is the larger is the measurement repeating this measurement for all the basis functions produces the frequency domain representation
+
+see also
+
+bispectrum
+
+characteristic function probability theory
+
+fractional fourier transform
+
+laplace transform
+
+least squares spectral analysis
+
+mellin transform
+
+number theoretic transform
+
+orthogonal functions
+
+pontryagin duality
+
+schwartz space
+
+spectral density
+
+spectral density estimation
+
+two sided laplace transform
+
+wavelet
+
+notes
+
+references
+
+
+
+
+
+edward w kamen bonnie s heck fundamentals of signals and systems using the web and matlab isbn 0 13 017293 6
+
+
+
+a d polyanin and a v manzhirov handbook of integral equations crc press boca raton 1998 isbn 0 8493 2876 4
+
+
+
+
+
+e m stein g weiss introduction to fourier analysis on euclidean spaces princeton university press 1971 isbn 0 691 08078 x
+
+external links
+
+tables of integral transforms at eqworld the world of mathematical equations
+
+an intuitive explanation of fourier theory by steven lehar
+
+lectures on image processing a collection of 18 lectures in pdf format from vanderbilt university lecture 6 is on the 1 and 2 d fourier transform lectures 7 15 make use of it by alan peters

@@ -1,0 +1,262 @@
+a fractal is generally a rough or fragmented geometric shape that can be split into parts each of which is at least approximately a reduced size copy of the whole a property called self similarityroots of mathematical interest on fractals can be traced back to the late 19th century the term however was coined by benoît mandelbrot in 1975 and was derived from the latin fractus meaning broken or fractured a mathematical fractal is based on an equation that undergoes iteration a form of feedback based on recursion
+
+a fractal often has the following features
+
+it has a fine structure at arbitrarily small scales
+
+it is too irregular to be easily described in traditional euclidean geometric language
+
+it is self similar at least approximately or stochastically
+
+it has a hausdorff dimension which is greater than its topological dimension although this requirement is not met by space filling curves such as the hilbert curvethe hilbert curve map is not a homeomorhpism so it does not preserve topological dimension the topological dimension and hausdorff dimension of the image of the hilbert map in r2 are both 2 note however that the topological dimension of the graph of the hilbert map a set in r3 is 1
+
+it has a simple and recursive definition
+
+because they appear similar at all levels of magnification fractals are often considered to be infinitely complex in informal terms natural objects that approximate fractals to a degree include clouds mountain ranges lightning bolts coastlines snow flakes even various vegetables cauliflower and broccoli however not all self similar objects are fractals for example the real line a straight euclidean line is formally self similar but fails to have other fractal characteristics for instance it is regular enough to be described in euclidean terms
+
+images of fractals can be created using fractal generating software images produced by such software are normally referred to as being fractals even if they do not have the above characteristics as it is possible to zoom into a region of the image that does not exhibit any fractal properties
+
+history
+
+the mathematics behind fractals began to take shape in the 17th century when mathematician and philosopher leibniz considered recursive self similarity although he made the mistake of thinking that only the straight line was self similar in this sense
+
+it took until 1872 before a function appeared whose graph would today be considered fractal when karl weierstrass gave an example of a function with the non intuitive property of being everywhere continuous but nowhere differentiable in 1904 helge von koch dissatisfied with weierstrasss very abstract and analytic definition gave a more geometric definition of a similar function which is now called the koch curve the image at right is three koch curves put together to form what is commonly called the koch snowflake in 1915 waclaw sierpinski constructed his triangle and one year later his carpet originally these geometric fractals were described as curves rather than the 2d shapes that they are known as in their modern constructions in 1918 bertrand russell recognized a supreme beauty within the emerging mathematics of fractals the idea of self similar curves was taken further by paul pierre lévy who in his 1938 paper plane or space curves and surfaces consisting of parts similar to the whole described a new fractal curve the lévy c curve georg cantor also gave examples of subsets of the real line with unusual properties these cantor sets are also now recognized as fractals
+
+iterated functions in the complex plane were investigated in the late 19th and early 20th centuries by henri poincaré felix klein pierre fatou and gaston julia however without the aid of modern computer graphics they lacked the means to visualize the beauty of many of the objects that they had discovered
+
+in the 1960s benoît mandelbrot started investigating self similarity in papers such as how long is the coast of britain statistical self similarity and fractional dimension which built on earlier work by lewis fry richardson finally in 1975 mandelbrot coined the word fractal to denote an object whose hausdorff besicovitch dimension is greater than its topological dimension he illustrated this mathematical definition with striking computer constructed visualizations these images captured the popular imagination many of them were based on recursion leading to the popular meaning of the term fractal
+
+examples
+
+a class of examples is given by the cantor sets sierpinski triangle and carpet menger sponge dragon curve space filling curve and koch curve additional examples of fractals include the lyapunov fractal and the limit sets of kleinian groups fractals can be deterministic all the above or stochastic that is non deterministic for example the trajectories of the brownian motion in the plane have a hausdorff dimension of 2
+
+chaotic dynamical systems are sometimes associated with fractals objects in the phase space of a dynamical system can be fractals see attractor objects in the parameter space for a family of systems may be fractal as well an interesting example is the mandelbrot set this set contains whole discs so it has a hausdorff dimension equal to its topological dimension of 2 but what is truly surprising is that the boundary of the mandelbrot set also has a hausdorff dimension of 2 while the topological dimension of 1 a result proved by mitsuhiro shishikura in 1991 a closely related fractal is the julia set
+
+generating fractals
+
+
+
+
+
+
+
+
+
+even 2000 times magnification of the mandelbrot set uncovers fine detail resembling the full set
+
+four common techniques for generating fractals are
+
+escape time fractals ndash also known as orbits fractals these are defined by a formula or recurrence relation at each point in a space such as the complex plane examples of this type are the mandelbrot set julia set the burning ship fractal the nova fractal and the lyapunov fractal the 2d vector fields that are generated by one or two iterations of escape time formulae also give rise to a fractal form when points or pixel data are passed through this field repeatedly
+
+iterated function systems ndash these have a fixed geometric replacement rule cantor set sierpinski carpet sierpinski gasket peano curve koch snowflake harter highway dragon curve t square menger sponge are some examples of such fractals
+
+random fractals ndash generated by stochastic rather than deterministic processes for example trajectories of the brownian motion lévy flight fractal landscapes and the brownian tree the latter yields so called mass or dendritic fractals for example diffusion limited aggregation or reaction limited aggregation clusters
+
+strange attractors ndash generated by iteration of a map or the solution of a system of initial value differential equations that exhibit chaos
+
+classification
+
+fractals can also be classified according to their self similarity there are three types of self similarity found in fractals
+
+exact self similarity ndash this is the strongest type of self similarity the fractal appears identical at different scales fractals defined by iterated function systems often display exact self similarity
+
+quasi self similarity ndash this is a loose form of self similarity the fractal appears approximately but not exactly identical at different scales quasi self similar fractals contain small copies of the entire fractal in distorted and degenerate forms fractals defined by recurrence relations are usually quasi self similar but not exactly self similar
+
+statistical self similarity ndash this is the weakest type of self similarity the fractal has numerical or statistical measures which are preserved across scales most reasonable definitions of fractal trivially imply some form of statistical self similarity fractal dimension itself is a numerical measure which is preserved across scales random fractals are examples of fractals which are statistically self similar but neither exactly nor quasi self similar
+
+in nature
+
+approximate fractals are easily found in nature these objects display self similar structure over an extended but finite scale range examples include clouds snow flakes crystals mountain ranges lightning river networks cauliflower or broccoli and systems of blood vessels and pulmonary vessels coastlines may be loosely considered fractal in nature
+
+trees and ferns are fractal in nature and can be modeled on a computer by using a recursive algorithm this recursive nature is obvious in these examples a branch from a tree or a frond from a fern is a miniature replica of the whole not identical but similar in nature the connection between fractals and leaves are currently being used to determine how much carbon is contained in trees this connection is hoped to help determine and solve the environmental issue of carbon emission and control hunting the hidden dimension nova pbs wpmb maryland 10282008
+
+in 1999 certain self similar fractal shapes were shown to have a property of frequency invariance the same electromagnetic properties no matter what the frequency from maxwells equations see fractal antennahohlfeldr and cohen nself similarity and the geometric requirements for frequency independence in antennae  fractals vol 7 no 1 1999 79 84
+
+
+
+imageanimated fractal mountaingifa fractal that models the surface of a mountain animation
+
+imagebransleys fernpnga fractal fern computed using an iterated function system
+
+imagecauliflower fractal avmjpgphotograph of a romanesco broccoli showing a naturally occuring fractal
+
+imagepentagramfractalpngfractal pentagram drawn with a vector iteration program
+
+
+
+in creative works
+
+fractal patterns have been found in the paintings of american artist jackson pollock while pollocks paintings appear to be composed of chaotic dripping and splattering computer analysis has found fractal patterns in his workrichard taylor adam p micolich and david jonas fractal expressionism  can science be used to further our understanding of art
+
+decalcomania a technique used by artists such as max ernst can produce fractal like patternsa panorama of fractals and their uses by michael frame and benoît b mandelbrot it involves pressing paint between two surfaces and pulling them apart
+
+fractals are also prevalent in african art and architecture circular houses appear in circles of circles rectangular houses in rectangles of rectangles and so on such scaling patterns can also be found in african textiles sculpture and even cornrow hairstylesron eglash african fractals modern computing and indigenous design new brunswick rutgers university press 1999
+
+
+
+imageglue1800x600jpga fractal is formed when pulling apart two glue covered acrylic sheets
+
+imagesquare1jpghigh voltage breakdown within a 4prime block of acrylic creates a fractal lichtenberg figure
+
+imagemicrowaved dvdjpgfractal branching occurs in a fractured surface such as a microwave irradiated dvd
+
+imagedlaclusterjpga dla cluster grown from a copperii sulfate solution in an electrodeposition cell
+
+imagewoodburnfractaljpga woodburn fractal
+
+imagephoenixjuliagifa magnification of the phoenix set
+
+imagelines apophysis fractal flamejpg  a fractal flame created with the program apophysis
+
+imagehidden mandarin fractal sterling2 3365jpg fractal made by the program sterling
+
+imagejulian fractaljpga fractal created using the program apophysis and a julian transform
+
+
+
+applications
+
+as described above random fractals can be used to describe many highly irregular real world objects other applications of fractals include
+
+classification of histopathology slides in medicine
+
+fractal landscape or coastline complexity
+
+enzymeenzymology michaelis menten kinetics
+
+generation of new music
+
+generation of various art forms
+
+signal and image compression
+
+creation of digital photographic enlargements
+
+seismology
+
+fractal in soil mechanics
+
+computer and video game design especially computer graphics for organic environments and as part of procedural generation
+
+fractography and fracture mechanics
+
+fractal antennas ndash small size antennas using fractal shapes
+
+small angle scattering theory of fractally rough systems
+
+t shirts and other fashion
+
+generation of patterns for camouflage such as marpat
+
+digital sundial
+
+technical analysis of price series see elliott wave principle
+
+see also
+
+bifurcation theory
+
+butterfly effect
+
+chaos theory
+
+complexity
+
+constructal theory
+
+contraction mapping theorem
+
+diamond square algorithm
+
+droste effect
+
+feigenbaum function
+
+fractal art
+
+fractal compression
+
+fractal cosmology
+
+fractal flame
+
+fractals in wikimedia
+
+fractal landscape
+
+fractint
+
+fracton
+
+graftal
+
+greeble
+
+lacunarity
+
+list of fractals by hausdorff dimension
+
+publications in fractal geometry
+
+newton fractal
+
+recursionism
+
+sacred geometry
+
+self reference
+
+space filling curve
+
+strange loop
+
+turbulence
+
+references
+
+further reading
+
+barnsley michael f and hawley rising fractals everywhere boston academic press professional 1993 isbn 0 12 079061 0
+
+falconer kenneth techniques in fractal geometry john willey and sons 1997 isbn 0 471 92287 0
+
+jürgens hartmut heins otto peitgen and dietmar saupe chaos and fractals new frontiers of science new york springer verlag 1992 isbn 0 387 97903 4
+
+benoît b mandelbrot the fractal geometry of nature new york w h freeman and co 1982 isbn 0 7167 1186 9
+
+peitgen heinz otto and dietmar saupe eds the science of fractal images new york springer verlag 1988 isbn 0 387 96608 0
+
+clifford a pickover ed chaos and fractals a computer graphical journey a 10 year compilation of advanced research elsevier 1998 isbn 0 444 50002 2
+
+jesse jones fractals for the macintosh waite group press corte madera ca 1993 isbn 1 878739 46 8
+
+hans lauwerier fractals endlessly repeated geometrical figures translated by sophia gill hoffstadt princeton university press princeton nj 1991 isbn 0 691 08551 x cloth isbn 0 691 02445 6 paperback this book has been written for a wide audience includes sample basic programs in an appendix
+
+
+
+bernt wahl peter van roy michael larsen and eric kampman exploring fractals on the macintosh addison wesley 1995 isbn 0 201 62630 6
+
+nigel lesmoir gordon the colours of infinity the beauty the power and the sense of fractals isbn 1 904555 05 5 the book comes with a related dvd of the arthur c clarke documentary introduction to the fractal concept and the mandelbrot set
+
+gouyet jean françois physics and fractal structures foreword by b mandelbrot masson 1996 isbn 2 225 85130 1 and new york springer verlag 1996 isbn 0 387 94153 1 out of print available in pdf version at 
+
+external links
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

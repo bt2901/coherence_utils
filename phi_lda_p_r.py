@@ -11,29 +11,9 @@ lda_phi = read_phi(15275, T)
     
 num2token, token2num = read_vocab()
 
-def read_theta(T, D):
-    my_shape = (T, D)
-
-    theta = numpy.zeros((T, D))
-    doc = 0
-    with open("doc_topic_proportion_for_topic_intrusion", "r") as f:
-        for line in f:
-            arr = line.strip().split(" ")
-            for topic, prob in enumerate(arr):
-                theta[topic, doc] = float(prob)
-            doc += 1
-    print doc
-    theta /= np.sum(theta, axis=0)
-    return theta
-
 D = 200
-theta = read_theta(50, D)
-print np.sum(theta)
 n_positions = 22331618
-    
-def theta_est(doc_id, topic):
-    return 1.0/50
-    
+
 
 
 def calc_p_r():
@@ -139,12 +119,6 @@ def calc_covered_len(T, lda_phi, num2token, token2num):
     print total_prob
     print "proportion"
     print expected_covered_len / expected_words
-    '''
-    total_prob = np.sum(total_prob)
-    S = "prob(top_token|t) = {} total_prob = {} covered_len = {} expected_covered_len = {} expected_words = {}".format(expected_covered_len / expected_words, total_prob, covered_len, expected_covered_len, expected_words)
-    f.write(S)
-    print S
-    '''
 
 
 def mark_word(window_id, index, marked_positions):
@@ -153,6 +127,7 @@ def mark_word(window_id, index, marked_positions):
     word_position = (corpus_file, line_num, head_id + index)
     marked_positions.add(word_position)
 
+# TODO: itertools.combinations(relevant_indexes, 2)
 def calc_word_count(words_in_window, topic_word_set, window_id, marked_positions):
     # relevant_indexes = [i for i, w in enumerate(words_in_window) if w in topic_word_set]
     # relevant_indexes = [i for i, w in enumerate(words_in_window) if w != "_"]
@@ -160,18 +135,6 @@ def calc_word_count(words_in_window, topic_word_set, window_id, marked_positions
     if len(relevant_indexes.keys()) >= 2:
         for i in relevant_indexes.values():
             mark_word(window_id, i, marked_positions)
-        '''
-        combs = itertools.combinations(relevant_indexes, 2)
-        for i1, i2 in combs:
-            #w1, w2 = words_in_window[i1], words_in_window[i2]
-            #if w1 in topic_word_set and w2 in topic_word_set:
-            mark_word(window_id, i1, marked_positions)
-            mark_word(window_id, i2, marked_positions)
-        '''
-    
-# TODO: DELETE STOP WORDS
-# 
-# 
 
 def coherence_process_file(window_size, corpus_file, topic_word_set):
     marked_positions = set()
@@ -235,31 +198,7 @@ def calc_coherence_stats(words):
     return n_positions, marked_positions
 
 #calc_p_r()
-#calc_covered_len(T, lda_phi, num2token, token2num)
-
-'''        
-unified_marked_positions = set()
-global_positions = 0
-
-with open("out_percent.txt", "w") as f:
-    for topic in range(T):
-        print "topic {}".format(topic)
-        f.write("topic {}".format(topic))
-        displayed_words, displayed_word_ids = top_words_in_topic(lda_phi[topic, :], num2token)
-        print displayed_words
-        n_positions, marked_positions = calc_coherence_stats(displayed_words)
-        print "FINAL"
-        print len(marked_positions), n_positions, float(len(marked_positions))/n_positions
-        f.write("{} {} {}\n".format(len(marked_positions), n_positions, float(len(marked_positions))/n_positions))
-        unified_marked_positions |= marked_positions
-        print "current: {}".format(float(len(unified_marked_positions))/n_positions)
-         
-    print "OVERALL"
-    print len(unified_marked_positions)
-    print len(unified_marked_positions), n_positions, float(len(unified_marked_positions))/n_positions
-    f.write("overall: {} {} {}\n".format(len(unified_marked_positions), n_positions, float(len(unified_marked_positions))/n_positions))
-    '''
-
+calc_covered_len(T, lda_phi, num2token, token2num)
     
     
 filtered_len = 0
