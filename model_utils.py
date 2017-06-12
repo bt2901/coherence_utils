@@ -70,6 +70,23 @@ def get_top_indices(target_values, N):
     ids = ids[order]
     return ids[:N]
 
+def get_dict(dn):
+    dictionary = artm.Dictionary()
+    batch_vectorizer = None
+    if len(glob.glob(os.path.join(dn, '*.batch'))) < 1:
+        batch_vectorizer = artm.BatchVectorizer(data_path='', data_format='bow_uci', collection_name=dn, target_folder=dn)
+    else:
+        batch_vectorizer = artm.BatchVectorizer(data_path=dn, data_format='batches')
+
+
+    if not os.path.isfile(dn + '/dictionary.dict'):
+        dictionary.gather(data_path=batch_vectorizer.data_path)
+        dictionary.save(dictionary_path=dn+'/dictionary.dict')
+
+    dictionary.load(dictionary_path=dn+'/dictionary.dict')
+    return batch_vectorizer, dictionary
+
+    
 def raw_phi2artm(initial_phi, phi_num2token, phi_tok2num, dictionary, regs, scores, topic_names, stopwords=None):
     num_topics = len(topic_names)
     model_name = 'pwt'

@@ -1,18 +1,32 @@
 import numpy 
 import os, glob, codecs
-from model_utils import read_phi_blei, read_vocab_blei, get_top_indices, raw_phi2artm
+from model_utils import read_phi_blei, read_vocab_blei, get_top_indices, raw_phi2artm, get_dict
 import itertools
 from tqdm import tqdm 
 import artm
 
 # read Blei's model
-# this isn't working with models in ARTM format yet
-# plan to add this functionality later
 dn = 'rtl-wiki_fromblei'
 T = 50
 vocab_size = 15275
 blei_phi = read_phi_blei(vocab_size, T)
 num2token, token2num = read_vocab_blei()
+
+use_artm = True 
+if use_artm: 
+    # the results will be slightly different (different dictionaries) 
+    # this is not important:
+    # the purpose of this script is to show how to work with models in ARTM format
+    batch_vectorizer, dictionary = get_dict(dn)
+    topic_names = ["topic_{}".format(i) for i in range(T)]
+    model, protobuf_data, phi_numpy_matrix = raw_phi2artm(blei_phi, num2token, token2num, dictionary, [], [], topic_names)
+
+    lda_phi = numpy.array(model.get_phi())
+    num2token = list(model.get_phi().index)
+    token2num = {token: i for i, token in enumerate(num2token)}
+else:
+    lda_phi = blei_phi
+    
 
 def calc_expected_words(T, words_data, local_theta, phi):
     expected_words = numpy.zeros((T, ))
