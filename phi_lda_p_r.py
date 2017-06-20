@@ -10,17 +10,7 @@ T = 50
 lda_phi = read_phi_blei(15275, T)
     
 num2token, token2num = read_vocab_blei()
-                
-def calc_expected_words(T, words_data, local_theta, phi):
-    expected_words = np.zeros((T, ))
-    for word_id, count in words_data.items():
-        pwt = lda_phi[word_id, :]
-        # TODO: better ptdw
-        ptdw = lda_phi[word_id, :] * local_theta[:]
-        ptdw /= np.sum(ptdw)
-        expected_words += count * ptdw
 
-    return expected_words
 
 def mark_word(window_id, index, marked_positions):
     
