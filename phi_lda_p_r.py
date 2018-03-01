@@ -92,20 +92,20 @@ unified_marked_positions = set()
 global_positions = 0
 
 with open("out_percent_newer.txt", "w") as f:
-    for topic in range(T):
+    f.write("topic name;marked_positions;total_positions;fraction\n".format(len(unified_marked_positions), n_positions, float(len(unified_marked_positions))/    for topic in range(T):
         print "topic {}".format(topic)
-        f.write("topic {}".format(topic))
+        f.write("topic {};".format(topic))
         this_displayed_word_ids = get_top_indices(lda_phi[:, topic], 10)
         displayed_words = [num2token[id] for id in this_displayed_word_ids]
         
         print displayed_words
         n_positions, marked_positions = calc_coherence_stats(displayed_words)
         print len(marked_positions), n_positions, float(len(marked_positions))/n_positions
-        f.write("{} {} {}\n".format(len(marked_positions), n_positions, float(len(marked_positions))/n_positions))
+        f.write("{};{};{}\n".format(len(marked_positions), n_positions, float(len(marked_positions))/n_positions))
         unified_marked_positions |= marked_positions
         print "current: {}".format(float(len(unified_marked_positions))/n_positions)
          
     print "OVERALL"
     print len(unified_marked_positions)
     print len(unified_marked_positions), n_positions, float(len(unified_marked_positions))/n_positions
-    f.write("overall: {} {} {}\n".format(len(unified_marked_positions), n_positions, float(len(unified_marked_positions))/n_positions))
+    f.write("overall;{};{};{}\n".format(len(unified_marked_positions), n_positions, float(len(unified_marked_positions))/n_positions))
