@@ -83,7 +83,7 @@ def calc_blei_scores(plsa_phi):
     phi[wt] * [log(phi[wt]) - 1/T sum_k log(phi[wk])]
     '''
     T = plsa_phi.shape[0]
-    blei_eps = 1e-100
+    blei_eps = 1e-42
     log_phi = numpy.log(plsa_phi + blei_eps)
     denom = numpy.sum(log_phi, axis=0)
     denom = denom[numpy.newaxis, :]
